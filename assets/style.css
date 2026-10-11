@@ -58,3 +58,9 @@ nav.top a { color: var(--secondary); }
 hr { border: 0; border-top: 0.5px solid var(--line); margin: 48px 0; }
 footer { color: var(--secondary); font-size: 14px; margin-top: 56px; }
 code, kbd { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.92em; }
+
+/* Guide: App Store screenshots */
+figure.shot { margin: 16px 0 20px; }
+figure.shot img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 0 0 0.5px var(--line); }
+.shots-row { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin: 8px 0; }
+.shots-row figure.shot.phone { flex: 1 1 220px; max-width: 300px; margin: 0; }
