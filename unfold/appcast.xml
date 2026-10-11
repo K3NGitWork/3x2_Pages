@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparkle update feed for Unfold, the download from this website (not the App Store version).
+     scripts/release-direct.sh (publish option) in the Unfold repo adds the items. -->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Unfold</title>
+    <link>https://k3ngitwork.github.io/3x2_Pages/unfold/</link>
+    <language>en</language>
+    <!-- items -->
+  </channel>
+</rss>

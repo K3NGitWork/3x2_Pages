@@ -52,6 +52,7 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 0 0 0.5px var(--line);
   font-weight: 500;
 }
+.links a.primary { background: var(--accent); color: #fff; box-shadow: none; }
 nav.top { font-size: 15px; margin-bottom: 28px; }
 nav.top a { color: var(--secondary); }
 .lang { font-size: 15px; color: var(--secondary); margin: -4px 0 24px; }
