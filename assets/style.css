@@ -1,0 +1,60 @@
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --text: #1d1d1f;
+  --secondary: #6e6e73;
+  --accent: #5b57f5;
+  --line: rgba(0, 0, 0, 0.08);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --card: #1c1c1e;
+    --text: #f5f5f7;
+    --secondary: #98989d;
+    --accent: #8582ff;
+    --line: rgba(255, 255, 255, 0.12);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+header.app { display: flex; align-items: center; gap: 18px; margin-bottom: 32px; }
+header.app img { width: 72px; height: 72px; border-radius: 16px; }
+header.app .name { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+header.app .tagline { color: var(--secondary); }
+h1 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+h3 { font-size: 18px; margin: 28px 0 6px; }
+p, li { color: var(--text); }
+.muted { color: var(--secondary); font-size: 15px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 20px 24px;
+  margin: 16px 0;
+  box-shadow: 0 0 0 0.5px var(--line);
+}
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.links a {
+  background: var(--card);
+  border-radius: 999px;
+  padding: 8px 16px;
+  box-shadow: 0 0 0 0.5px var(--line);
+  font-weight: 500;
+}
+nav.top { font-size: 15px; margin-bottom: 28px; }
+nav.top a { color: var(--secondary); }
+.lang { font-size: 15px; color: var(--secondary); margin: -4px 0 24px; }
+hr { border: 0; border-top: 0.5px solid var(--line); margin: 48px 0; }
+footer { color: var(--secondary); font-size: 14px; margin-top: 56px; }
+code, kbd { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.92em; }
