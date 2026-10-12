@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 0.1.1</title>
+      <pubDate>Mon, 12 Oct 2026 15:52:26 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Buy Me a Coffee now opens Ko-fi. Small fixes from a code review: folders like v1.2 keep their name when a copy already exists; the password list loads faster.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-0.1.1/Unfold.dmg" length="10764079" type="application/octet-stream" sparkle:edSignature="oPyNGkGnxmQhqWVFhoGc1e2tYlAN5Xu2tJS4VVnPjlwUUitmlzZ6hfNWOZBB0gl8d5BxgXuQmZ5pX0XoW1DUDA=="/>
+    </item>
+    <item>
       <title>Unfold 0.1.0</title>
       <pubDate>Mon, 12 Oct 2026 15:16:30 +0000</pubDate>
       <sparkle:version>1</sparkle:version>
