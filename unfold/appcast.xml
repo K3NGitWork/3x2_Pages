@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 1.0</title>
+      <pubDate>Mon, 12 Oct 2026 21:00:03 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Unfold 1.0, the same version as on the Mac App Store. New: Settings › About with the version, updates, the guide and the third-party licenses.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-1.0/Unfold.dmg" length="10764524" type="application/octet-stream" sparkle:edSignature="kNKXzF6ZvvxFt/0lLT80Dr/Bjx/6u+pmKH0Jjc0NzdXnqSlW2XO7KhUlabHuooKnWil2xThgqJjp9LsuJG5jDA=="/>
+    </item>
+    <item>
       <title>Unfold 0.1.1</title>
       <pubDate>Mon, 12 Oct 2026 15:52:26 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
