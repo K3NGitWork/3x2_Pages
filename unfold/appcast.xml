@@ -7,5 +7,14 @@
     <link>https://k3ngitwork.github.io/3x2_Pages/unfold/</link>
     <language>en</language>
     <!-- items -->
+    <item>
+      <title>Unfold 0.1.0</title>
+      <pubDate>Mon, 12 Oct 2026 15:16:30 +0000</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>The first version of Unfold.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-0.1.0/Unfold.dmg" length="10839808" type="application/octet-stream" sparkle:edSignature="GTq2O6/5+U9i7+JgdVpo97L/iK6lvvqSJ+wGXwBYBUjappBERbFsHRVMqyldh/JvMjAGTfINv7+8S8eeXVmUDA=="/>
+    </item>
   </channel>
 </rss>
