@@ -27,7 +27,7 @@ needs one. Open the welcome screen again with <b>?</b> in the main window or in 
 
 <h3>2. Unfold from Finder</h3>
 <figure class="shot">
-  <img src="img/mac-M1.jpg" alt="Finder's right-click menu with Unfold Here, Unfold to Folder and Unfold to…" loading="lazy">
+  <img src="img/mac-finder-menu.jpg" alt="Finder's right-click menu with Unfold Here, Unfold to Folder and Unfold to…" loading="lazy">
 </figure>
 <p>Right-click an archive (or several) in Finder:</p>
 <ul>
@@ -39,47 +39,56 @@ needs one. Open the welcome screen again with <b>?</b> in the main window or in 
 Unfold. Without it, the same is under right-click › Quick Actions › Unfold.</p>
 
 <h3>3. Double-click, drop, or open</h3>
-<figure class="shot">
-  <img src="img/mac-M2.jpg" alt="The Unfold window with a multipart set done, one archive extracting and one waiting" loading="lazy">
+<figure class="shot window">
+  <img src="img/mac-queue.png" alt="The Unfold window: a finished multipart set at the top, one archive extracting, one done and one waiting" loading="lazy">
 </figure>
 <p>Double-click an archive, drop archives on the Unfold window, or click <b>+</b>. Each archive or multipart set is
-one row with its progress. A set of four parts shows as one row (“4 parts”). <b>Clear Finished</b> tidies the
-list.</p>
+one row with its progress; a set of four parts shows as one row (“4 parts”). The newest archives are at the top,
+while the ones added first are unfolded first. <b>Clear Finished</b> tidies the list.</p>
+<p>When a row is done, click the folder button on it, or the row itself, to <b>show the result in Finder</b>: a new
+folder opens, a single file is selected. If you have moved or deleted the result in the meantime, the button is
+dimmed.</p>
 <p>Where the files go when you double-click or drop is set in Settings › General › Opening an archive. The default,
 <b>Unfold to Folder when needed</b>, puts a single item right next to the archive and several items into a folder
 named after it, so you never get loose files everywhere or a folder with just one folder inside.</p>
 
 <h3>4. Out of your way</h3>
-<figure class="shot">
-  <img src="img/mac-M3.jpg" alt="The small progress panel at the top right of the desktop" loading="lazy">
+<figure class="shot window narrow">
+  <img src="img/mac-panel.png" alt="The small progress panel: one set extracting, one done, one trying saved passwords" loading="lazy">
 </figure>
-<p>Started from Finder or by a double-click, Unfold only shows a small progress panel and quits a few seconds
-after it's done. To keep it running, open the main window or turn on Settings › General › Keep Unfold open after
-extracting.</p>
+<p>Started from Finder or by a double-click, Unfold only shows a small progress panel at the top right of the
+screen and quits a few seconds after it's done. To keep it running, click <b>Show Window</b> or turn on
+Settings › General › Keep Unfold open after extracting.</p>
 
 <h3>5. Encrypted archives</h3>
-<figure class="shot">
-  <img src="img/mac-M5.jpg" alt="The password sheet over the Unfold window" loading="lazy">
+<figure class="shot window">
+  <img src="img/mac-password.png" alt="The password sheet over the Unfold window" loading="lazy">
 </figure>
-<p>When an archive needs a password, Unfold asks. Tick <b>Remember in list</b> to save it for next time.</p>
+<p>When an archive needs a password, Unfold first tries your saved passwords (the row shows “Trying saved
+passwords…”), then asks. Tick <b>Remember in list</b> to save the one you type for next time. A wrong password
+shakes the field instead of failing the archive.</p>
 
-<h3>6. Your password list</h3>
-<figure class="shot">
-  <img src="img/mac-M4.jpg" alt="Settings, Passwords tab with the saved passwords" loading="lazy">
-</figure>
-<p>In Settings › Passwords you keep passwords you use often. For an encrypted archive, Unfold tries them from top
-to bottom before asking and moves the one that worked to the top. Add with <b>+</b>, drag to reorder, click the
-eye or press Space to reveal one. The list is stored in your Keychain.</p>
-
-<h3>7. Settings</h3>
+<h3>6. Settings</h3>
+<div class="shots-row">
+  <figure class="shot window"><img src="img/mac-settings-general.png" alt="Settings, General tab" loading="lazy"><figcaption>General</figcaption></figure>
+  <figure class="shot window"><img src="img/mac-settings-passwords.png" alt="Settings, Passwords tab with saved passwords" loading="lazy"><figcaption>Passwords</figcaption></figure>
+</div>
+<p>Settings (the gear in the main window, or Unfold › Settings…) always opens on <b>General</b>:</p>
 <ul>
   <li><b>General:</b> where archives go, open the folder afterwards, move the archive to the Trash after success,
   keep Unfold open, make Unfold the default app for archives, and the folders Unfold may use.</li>
-  <li><b>Passwords:</b> the list above.</li>
-  <li><b>About:</b> version and updates, this guide, support and the third-party licenses.</li>
+  <li><b>Passwords:</b> passwords you use often. For an encrypted archive, Unfold tries them from top to bottom
+  before asking and, if you like, moves the one that worked to the top. Add with <b>+</b>, drag to reorder, click
+  the eye or press Space to reveal one. The <b>⋯</b> menu pastes, imports or exports a list (one password per line). The
+  list is stored in your Keychain.</li>
+  <li><b>About:</b> the version and updates, the welcome screen, this guide, support, the privacy policy and the
+  third-party licenses.</li>
 </ul>
+<figure class="shot window narrow">
+  <img src="img/mac-settings-about.png" alt="Settings, About tab" loading="lazy"><figcaption>About</figcaption>
+</figure>
 
-<h3>8. Shortcuts</h3>
+<h3>7. Shortcuts</h3>
 <p>The Shortcuts action <b>Unfold Archives</b> takes files and returns the extracted folders, for your own
 automations.</p>
 
@@ -88,31 +97,57 @@ automations.</p>
 <h2 id="ios">iPhone &amp; iPad</h2>
 
 <div class="shots-row">
-  <figure class="shot phone"><img src="img/iphone-I1.jpg" alt="The Unfold queue on iPhone" loading="lazy"></figure>
-  <figure class="shot phone"><img src="img/iphone-I2.jpg" alt="Picking a multipart set in the Files picker" loading="lazy"></figure>
+  <figure class="shot phone"><img src="img/iphone-empty.jpg" alt="Unfold on iPhone, empty, with the Downloads tip" loading="lazy"></figure>
+  <figure class="shot phone"><img src="img/iphone-queue.jpg" alt="The Unfold queue on iPhone" loading="lazy"></figure>
 </div>
 
-<h3>1. Open an archive</h3>
-<ul>
-  <li>Tap <b>+</b> in Unfold and pick an archive in Files. For a multipart set, select all its parts.</li>
-  <li>Or, in Files, Mail, Safari or any other app: <b>Share › Unfold</b>.</li>
-</ul>
-<p>The files appear next to the archive in Files. If that folder can't be written to (for example an attachment),
-they go to <b>On My iPhone › Unfold</b> (On My iPad on iPad).</p>
+<h3>1. Allow your Downloads folder</h3>
+<p>Most archives land in Downloads. The tip at the top asks once: tap <b>Choose Downloads…</b> and confirm. After
+that Unfold finds every part of a multipart set there and saves right next to the archive. More folders can be
+added in Settings › General › Folder Access. Without a folder, Unfold still works: the files then go to
+<b>On My iPhone › Unfold</b> (On My iPad on iPad).</p>
 
+<h3>2. Unfold right in Files: Share › Unfold Archive</h3>
 <div class="shots-row">
-  <figure class="shot phone"><img src="img/iphone-I3.jpg" alt="The password sheet on iPhone" loading="lazy"></figure>
-  <figure class="shot phone"><img src="img/iphone-I4.jpg" alt="The saved passwords on iPhone" loading="lazy"></figure>
+  <figure class="shot phone"><img src="img/iphone-share-sheet.jpg" alt="The share sheet in Files with Unfold Archive next to Copy and Add Tags" loading="lazy"></figure>
+  <figure class="shot phone"><img src="img/iphone-share-allow.jpg" alt="Unfold Archive asking once for the Downloads folder" loading="lazy"></figure>
 </div>
+<p>In Files, touch and hold an archive (or select several), tap <b>Share</b> and choose <b>Unfold Archive</b> in
+the row of actions. Unfold doesn't open: a small panel shows the progress, the files appear next to the archive,
+and the panel closes by itself when everything worked.</p>
+<ul>
+  <li>The first time in a folder, it asks for it once (“Allow ‘Downloads’” › <b>Choose Folder…</b>). Choose that
+  folder; or choose another one to save there instead. The app and the action share these folders, your settings
+  and your saved passwords.</li>
+  <li>For a multipart set, sharing any one part is enough once the folder is allowed.</li>
+  <li>Shared from Mail, Safari or another app, the archive arrives as a copy, so Unfold asks where to save.</li>
+  <li><b>Share › Unfold</b> (the app icon in the top row) opens the app instead and adds the archive there.</li>
+</ul>
 
-<h3>2. Passwords</h3>
-<p>Encrypted archive? Type the password once; <b>Remember in list</b> saves it. Your list is in Settings
-(gear, top left) › Passwords, and Unfold tries it before asking.</p>
+<h3>3. In the app</h3>
+<p>Tap <b>+</b> at the bottom left and pick archives in Files; for a multipart set, select all its parts or just
+one in an allowed folder. Each archive is a row, the newest at the top. When one is done, tap its folder button
+or the row to <b>show it in Files</b>. <b>Clear Finished</b> at the bottom right tidies the list.</p>
 
-<h3>3. Settings</h3>
-<p>The gear at the top left: where archives go, your passwords, and links to this guide and support.</p>
+<h3>4. Passwords</h3>
+<div class="shots-row">
+  <figure class="shot phone"><img src="img/iphone-password.jpg" alt="The password sheet on iPhone" loading="lazy"></figure>
+  <figure class="shot phone"><img src="img/iphone-settings-passwords.jpg" alt="The saved passwords on iPhone" loading="lazy"></figure>
+</div>
+<p>Encrypted archive? Unfold tries your saved passwords first, then asks. Type it once; <b>Remember in list</b>
+saves it. In Settings › Passwords, <b>+</b> adds one (✓ saves it, ✕ cancels), <b>⋯</b> pastes, imports or exports a list,
+tap a password to show it, touch and hold to reorder, swipe left to delete.</p>
 
-<h3>4. Shortcuts</h3>
+<h3>5. Settings</h3>
+<div class="shots-row">
+  <figure class="shot phone"><img src="img/iphone-settings-general.jpg" alt="Settings, General tab on iPhone" loading="lazy"></figure>
+  <figure class="shot phone"><img src="img/iphone-settings-about.jpg" alt="Settings, About tab on iPhone" loading="lazy"></figure>
+</div>
+<p>The gear at the top right opens Settings, with the same three tabs as on the Mac: <b>General</b> (where
+archives go and the folders Unfold may use), <b>Passwords</b> and <b>About</b> (version, this guide, support,
+privacy and licenses). Close it with <b>✕</b>.</p>
+
+<h3>6. Shortcuts</h3>
 <p><b>Unfold Archives</b> is available in the Shortcuts app as well.</p>
 
 <hr>
