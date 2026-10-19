@@ -65,3 +65,8 @@ figure.shot { margin: 16px 0 20px; }
 figure.shot img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 0 0 0.5px var(--line); }
 .shots-row { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin: 8px 0; }
 .shots-row figure.shot.phone { flex: 1 1 220px; max-width: 300px; margin: 0; }
+/* Guide: real screenshots. Mac windows are PNGs with their own rounded corners. */
+figure.shot.window img { box-shadow: none; border-radius: 0; }
+figure.shot.narrow { max-width: 420px; margin-left: auto; margin-right: auto; }
+figure.shot figcaption { font-size: 0.85em; color: var(--secondary); text-align: center; margin-top: 6px; }
+.shots-row figure.shot.window { flex: 1 1 260px; max-width: 360px; margin: 0; }
