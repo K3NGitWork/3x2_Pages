@@ -70,3 +70,5 @@ figure.shot.window img { box-shadow: none; border-radius: 0; }
 figure.shot.narrow { max-width: 420px; margin-left: auto; margin-right: auto; }
 figure.shot figcaption { font-size: 0.85em; color: var(--secondary); text-align: center; margin-top: 6px; }
 .shots-row figure.shot.window { flex: 1 1 260px; max-width: 360px; margin: 0; }
+/* Footer links on the subpages: the page you're on is marked. */
+.links a[aria-current="page"] { color: var(--secondary); pointer-events: none; }
