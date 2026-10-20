@@ -72,3 +72,13 @@ figure.shot figcaption { font-size: 0.85em; color: var(--secondary); text-align:
 .shots-row figure.shot.window { flex: 1 1 260px; max-width: 360px; margin: 0; }
 /* Footer links on the subpages: the page you're on is marked. */
 .links a[aria-current="page"] { color: var(--secondary); pointer-events: none; }
+/* Ko-fi's button, in our accent color and hosted here: nothing loads from Ko-fi until it's clicked. */
+.links a.kofi { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff;
+  font-weight: 700; border-radius: 10px; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+.links a.kofi:hover { opacity: .85; }
+.links a.kofi img { width: 20px; height: auto; }
+@media (prefers-reduced-motion: no-preference) {
+  .links a.kofi:hover img { animation: kofi-wiggle 1.2s ease-in-out; }
+}
+@keyframes kofi-wiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-10deg) scale(1.1); }
+  50% { transform: rotate(10deg) scale(1.1); } 75% { transform: rotate(-6deg); } }
