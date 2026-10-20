@@ -73,5 +73,6 @@ figure.shot figcaption { font-size: 0.85em; color: var(--secondary); text-align:
 /* Footer links on the subpages: the page you're on is marked. */
 .links a[aria-current="page"] { color: var(--secondary); pointer-events: none; }
 /* Our primary button with Ko-fi's cup logo (hosted here: nothing loads from Ko-fi until it's clicked). */
-.links a.kofi { display: inline-flex; align-items: center; gap: 8px; }
-.links a.kofi img { width: 20px; height: auto; }
+.links a.kofi { display: inline-flex; align-items: center; gap: 12px; }
+/* The cup sits on the text's cap height, not the line box (the line box includes descenders). */
+.links a.kofi img { width: 22px; height: auto; display: block; transform: translateY(1px); }
