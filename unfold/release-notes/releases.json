@@ -3,25 +3,36 @@
     {
       "version": "1.0",
       "date": "12 October 2026",
-      "where": ["Download", "Mac App Store"],
+      "where": [
+        "Download",
+        "Mac App Store"
+      ],
       "notes": {
         "intro": "The same version on the Mac App Store and as a download.",
-        "New": ["Settings › About with the version, updates, the Guide and the third-party licenses."]
+        "New": [
+          "Settings › About with the version, updates, the Guide and the third-party licenses."
+        ]
       }
     },
     {
       "version": "0.1.1",
       "date": "12 October 2026",
-      "where": ["Download"],
+      "where": [
+        "Download"
+      ],
       "notes": {
-        "Changed": ["**Buy Me a Coffee** now opens Ko-fi."],
-        "Fixed": ["Folders like `v1.2` keep their name when a copy already exists.", "The password list loads faster."]
+        "Fixed": [
+          "Folders like `v1.2` keep their name when a copy already exists.",
+          "The password list loads faster."
+        ]
       }
     },
     {
       "version": "0.1.0",
       "date": "12 October 2026",
-      "where": ["Download"],
+      "where": [
+        "Download"
+      ],
       "notes": {
         "intro": "The first version of Unfold for Mac: RAR, ZIP, 7z and more, right in Finder. Signed and notarized by Apple; it updates itself."
       }
@@ -31,7 +42,9 @@
     {
       "version": "1.0",
       "date": "Submitted 19 October 2026",
-      "where": ["iOS App Store"],
+      "where": [
+        "iOS App Store"
+      ],
       "notes": {
         "intro": "The first version for iPhone and iPad.",
         "New": [

@@ -12,7 +12,7 @@ markers). scripts/release-direct.sh in the Unfold repo runs it for every downloa
 
 Adding a version that is already listed adds its "where" chips and replaces its date and, if
 given, its notes. Notes are short lines: an intro sentence, then "New:", "Changed:" or "Fixed:"
-followed by "- " items. **bold** for app labels, `code` for file names.
+followed by "- " items. **bold** for app labels, `code` for file names. Never mention Ko-fi.
 """
 import argparse
 import datetime
@@ -44,6 +44,8 @@ def inline(text):
 
 def parse_notes(text):
     """'Intro\\nNew:\\n- a\\n- b' → {"intro": "Intro", "New": ["a", "b"]}."""
+    if re.search(r"ko-?fi", text, re.I):
+        raise SystemExit("Release notes never mention Ko-fi. Leave that line out.")
     notes, group = {}, None
     for line in text.strip().splitlines():
         line = line.strip()
