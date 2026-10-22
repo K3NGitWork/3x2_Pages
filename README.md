@@ -20,5 +20,7 @@ adds a version and rewrites the page (run it with `--help`). `scripts/release-di
 Unfold repo runs it for every download release; App Store versions are added by hand (see
 `Distribution/AppStore/README.md` there).
 
-**App Store link:** the pages use the placeholder `APP_STORE_URL`. Once the app is live, replace
-it everywhere: `grep -rl APP_STORE_URL --include=*.html . | xargs sed -i '' 's#APP_STORE_URL#https://apps.apple.com/app/id…#g'`.
+**App Store links:** the pages use the placeholders `MAC_APP_STORE_URL` and `IOS_APP_STORE_URL`.
+Once the app is live, replace them everywhere, e.g.
+`grep -rl IOS_APP_STORE_URL --include=*.html . | xargs sed -i '' 's#IOS_APP_STORE_URL#https://apps.apple.com/app/id…#g'`
+(and the same for `MAC_APP_STORE_URL`; one app record serves both, so it may be the same link).

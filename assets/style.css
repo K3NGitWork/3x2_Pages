@@ -297,11 +297,11 @@ b, strong { font-weight: 600; }
    Download for Mac leads by default; on touch devices (phones, iPads) On the App Store leads. No script. */
 .w-get__mac { background: var(--accent); color: var(--on-accent); box-shadow: none; }
 .w-get__mac:hover { filter: brightness(1.08); }
-.w-get__store { background: var(--surface); color: var(--text); box-shadow: inset 0 0 0 1px var(--line-strong); }
-.w-get__store:hover { background: var(--accent-wash); }
+.w-get__store, .w-get__ios { background: var(--surface); color: var(--text); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.w-get__store:hover, .w-get__ios:hover { background: var(--accent-wash); }
 @media (hover: none) and (pointer: coarse) {
-  .w-get__store { order: -1; background: var(--accent); color: var(--on-accent); box-shadow: none; }
-  .w-get__store:hover { background: var(--accent); filter: brightness(1.08); }
+  .w-get__ios { order: -1; background: var(--accent); color: var(--on-accent); box-shadow: none; }
+  .w-get__ios:hover { background: var(--accent); filter: brightness(1.08); }
   .w-get__mac { background: var(--surface); color: var(--text); box-shadow: inset 0 0 0 1px var(--line-strong); }
   .w-get__mac:hover { background: var(--accent-wash); filter: none; }
 }
@@ -345,14 +345,38 @@ b, strong { font-weight: 600; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 
-/* Platform switch: two radios styled as the glass tabs; shows one of two panels. No script needed. */
+/* Platform switch: two radios (first children of .w-switch) styled as the glass tabs. The tabs and the two panels can sit
+   anywhere inside .w-switch, e.g. the tabs in the page header and the panels below it (:has). No script needed. */
 .w-switch__input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .w-switch .w-tab { cursor: pointer; user-select: none; }
-.w-switch__mac:checked ~ .w-tabs .w-tab--mac, .w-switch__ios:checked ~ .w-tabs .w-tab--ios { background: linear-gradient(180deg, var(--glass-highlight), transparent 60%), var(--glass-lens); box-shadow: inset 0 1px 0 var(--glass-highlight), var(--shadow-lens); color: var(--lens-label); font-weight: 600; }
-.w-switch__mac:checked ~ .w-tabs .w-tab--mac:hover, .w-switch__ios:checked ~ .w-tabs .w-tab--ios:hover { background: linear-gradient(180deg, var(--glass-highlight), transparent 60%), var(--glass-lens); }
-.w-switch__mac:focus-visible ~ .w-tabs .w-tab--mac, .w-switch__ios:focus-visible ~ .w-tabs .w-tab--ios { outline: 3px solid var(--focus-ring); outline-offset: 2px; }
-.w-switch__panel--ios, .w-switch__ios:checked ~ .w-switch__panel--mac { display: none; }
-.w-switch__ios:checked ~ .w-switch__panel--ios { display: block; }
+.w-switch:has(.w-switch__mac:checked) .w-tab--mac, .w-switch:has(.w-switch__ios:checked) .w-tab--ios { background: linear-gradient(180deg, var(--glass-highlight), transparent 60%), var(--glass-lens); box-shadow: inset 0 1px 0 var(--glass-highlight), var(--shadow-lens); color: var(--lens-label); font-weight: 600; }
+.w-switch:has(.w-switch__mac:checked) .w-tab--mac:hover, .w-switch:has(.w-switch__ios:checked) .w-tab--ios:hover { background: linear-gradient(180deg, var(--glass-highlight), transparent 60%), var(--glass-lens); }
+.w-switch:has(.w-switch__mac:focus-visible) .w-tab--mac, .w-switch:has(.w-switch__ios:focus-visible) .w-tab--ios { outline: 3px solid var(--focus-ring); outline-offset: 2px; }
+.w-switch__panel--ios, .w-switch:has(.w-switch__ios:checked) .w-switch__panel--mac { display: none; }
+.w-switch:has(.w-switch__ios:checked) .w-switch__panel--ios { display: block; }
+
+/* Page header: title and lead on the left, the platform switch on the right */
+.w-pagehead { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-32); padding-bottom: var(--space-24); margin-bottom: var(--space-8); border-bottom: 0.5px solid var(--line); }
+.w-pagehead__text { min-width: 0; }
+.w-pagehead .w-title { margin-bottom: var(--space-8); }
+.w-pagehead .w-lead { margin: 0; }
+.w-pagehead .w-tabs { flex: none; margin-top: 1px; } /* centered on the title's 50px line */
+@media (max-width: 760px) {
+  .w-pagehead { flex-direction: column; align-items: stretch; gap: var(--space-24); }
+  .w-pagehead .w-tabs { display: flex; margin-top: 0; }
+  .w-pagehead .w-tab { flex: 1; justify-content: center; padding: 0 12px; }
+}
+
+/* iPad screenshots: the iPad screen's corner (about 18pt on a 1032pt-wide screen) */
+.w-shot--tablet img { border-radius: 2.6% / 1.95%; box-shadow: var(--shadow-shot); }
+
+/* Landing page: the platform switch above the stories, centered */
+.w-platformbar { display: flex; justify-content: center; padding-top: var(--space-64); }
+@media (max-width: 760px) {
+  .w-platformbar { padding-top: var(--space-48); }
+  .w-platformbar .w-tabs { display: flex; width: 100%; }
+  .w-platformbar .w-tab { flex: 1; justify-content: center; padding: 0 12px; }
+}
 
 /* Release notes */
 .w-releases { margin-top: var(--space-32); }

@@ -5,7 +5,7 @@ markers). scripts/release-direct.sh in the Unfold repo runs it for every downloa
 
   tools/release-notes.py add --platform mac --version 1.0.1 --where Download --notes "…"
   tools/release-notes.py add --platform mac --version 1.0.1 --where "Mac App Store"
-  tools/release-notes.py add --platform ios --version 1.0.1 --where "App Store" --status "Submitted 23 October 2026" --notes "…"
+  tools/release-notes.py add --platform ios --version 1.0.1 --where "iOS App Store" --status "Submitted 23 October 2026" --notes "…"
   tools/release-notes.py add --platform ios --version 1.0.1          (live: the status becomes today's date)
   tools/release-notes.py render                                     (rewrite the page from the JSON)
   tools/release-notes.py html --notes "…"                           (the notes as HTML, for the appcast)
@@ -109,7 +109,7 @@ def add(data, args):
         if w not in release["where"]:
             release["where"].append(w)
     if not release["where"]:
-        release["where"] = ["App Store"] if args.platform == "ios" else ["Download"]
+        release["where"] = ["iOS App Store"] if args.platform == "ios" else ["Download"]
     release["date"] = args.status or args.date or today()
     if args.notes:
         release["notes"] = parse_notes(args.notes)
@@ -124,7 +124,7 @@ def main():
     a = sub.add_parser("add")
     a.add_argument("--platform", choices=("mac", "ios"), required=True)
     a.add_argument("--version", required=True)
-    a.add_argument("--where", action="append", help='"Download", "Mac App Store" or "App Store"')
+    a.add_argument("--where", action="append", help='"Download", "Mac App Store" or "iOS App Store"')
     a.add_argument("--date", help='e.g. "22 October 2026"; default today')
     a.add_argument("--status", help='shown instead of a date while not live, e.g. "Submitted 19 October 2026"')
     a.add_argument("--notes")
