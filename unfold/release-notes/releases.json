@@ -1,0 +1,46 @@
+{
+  "mac": [
+    {
+      "version": "1.0",
+      "date": "12 October 2026",
+      "where": ["Download", "Mac App Store"],
+      "notes": {
+        "intro": "The same version on the Mac App Store and as a download.",
+        "New": ["Settings › About with the version, updates, the Guide and the third-party licenses."]
+      }
+    },
+    {
+      "version": "0.1.1",
+      "date": "12 October 2026",
+      "where": ["Download"],
+      "notes": {
+        "Changed": ["**Buy Me a Coffee** now opens Ko-fi."],
+        "Fixed": ["Folders like `v1.2` keep their name when a copy already exists.", "The password list loads faster."]
+      }
+    },
+    {
+      "version": "0.1.0",
+      "date": "12 October 2026",
+      "where": ["Download"],
+      "notes": {
+        "intro": "The first version of Unfold for Mac: RAR, ZIP, 7z and more, right in Finder. Signed and notarized by Apple; it updates itself."
+      }
+    }
+  ],
+  "ios": [
+    {
+      "version": "1.0",
+      "date": "Submitted 19 October 2026",
+      "where": ["App Store"],
+      "notes": {
+        "intro": "The first version for iPhone and iPad.",
+        "New": [
+          "Unfold right in Files: **Share › Unfold Archive**. The app stays closed, and the files appear next to the archive.",
+          "Open archives from Files, Mail, Safari or any app with “Open in Unfold”.",
+          "Multipart RAR sets unfold as one.",
+          "Saved passwords are tried for you, and stay in your Keychain."
+        ]
+      }
+    }
+  ]
+}
