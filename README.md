@@ -16,7 +16,7 @@ follows the Unfold Web design system; icons are Material Symbols Rounded (Apache
 `assets/icons.svg`. Sources of the texts: `design/appstore_brief/` in the Unfold repository.
 
 **Release notes:** `unfold/release-notes/releases.json` is the list; `tools/release-notes.py`
-adds a version and rewrites the page (run it with `--help`). `scripts/release-direct.sh` in the
+adds a version, rewrites the page and points every download link at the newest DMG (run it with `--help`). `scripts/release-direct.sh` in the
 Unfold repo runs it for every download release; App Store versions are added by hand (see
 `Distribution/AppStore/README.md` there).
 
