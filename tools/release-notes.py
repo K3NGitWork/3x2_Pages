@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Unfold's release notes: unfold/release-notes/releases.json is the list, this script writes it
 into unfold/release-notes/index.html (between the <!-- releases:mac --> and <!-- releases:ios -->
-markers). scripts/release-direct.sh in the Unfold repo runs it for every download release.
+markers), and points every "Download for Mac" link on the site at the newest download.
+scripts/release-direct.sh in the Unfold repo runs it for every download release.
 
-  tools/release-notes.py add --platform mac --version 1.0.1 --where Download --notes "…"
+  tools/release-notes.py add --platform mac --version 1.0.1 --where Download --dmg Unfold_1.0.1_5.dmg --notes "…"
   tools/release-notes.py add --platform mac --version 1.0.1 --where "Mac App Store"
   tools/release-notes.py add --platform ios --version 1.0.1 --where "iOS App Store" --status "Submitted 23 October 2026" --notes "…"
   tools/release-notes.py add --platform ios --version 1.0.1          (live: the status becomes today's date)
@@ -25,7 +26,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DIR = ROOT / "unfold" / "release-notes"
 DATA = DIR / "releases.json"
 PAGE = DIR / "index.html"
-DMG = "https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-{v}/Unfold.dmg"
+DMG = "https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-{v}/{dmg}"
+# Any download link on the site: the "latest" alias or a versioned asset.
+DMG_LINK = re.compile(r"https://github\.com/K3NGitWork/3x2_Pages/releases/"
+                      r"(?:latest/download|download/unfold-[0-9.]+)/Unfold[^\"/]*\.dmg")
 GROUPS = ("New", "Changed", "Fixed")
 MONTHS = ("January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December")
@@ -77,7 +81,7 @@ def entry_html(platform, release, latest):
     where = "".join(f'<span class="w-where">{html.escape(w)}</span>' for w in release["where"])
     more = ""
     if platform == "mac" and release["where"] == ["Download"]:
-        more = (f'<a class="w-more w-release__more" href="{DMG.format(v=v)}">Download {v}'
+        more = (f'<a class="w-more w-release__more" href="{dmg_url(release)}">Download {v}'
                 '<svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#chevron_right"/></svg></a>')
     return (f'<article class="w-release" id="{platform}-{v}"><div>'
             f'<h2 class="w-release__version">{v}{badge}</h2>'
@@ -86,11 +90,27 @@ def entry_html(platform, release, latest):
             f'<div class="w-release__notes">{notes_html(release["notes"])}{more}</div></article>')
 
 
+def dmg_url(release):
+    return DMG.format(v=release["version"], dmg=release.get("dmg", "Unfold.dmg"))
+
+
+def point_downloads(data):
+    """Every download link on the site → the newest Mac release that is a download."""
+    latest = max((r for r in data["mac"] if "Download" in r["where"]), key=key)
+    url = dmg_url(latest)
+    for page in ROOT.rglob("*.html"):
+        text = page.read_text()
+        new = DMG_LINK.sub(url, text)
+        if new != text:
+            page.write_text(new)
+
+
 def key(release):
     return tuple(int(p) for p in release["version"].split("."))
 
 
 def render(data):
+    point_downloads(data)
     page = PAGE.read_text()
     for platform in ("mac", "ios"):
         releases = sorted(data[platform], key=key, reverse=True)
@@ -113,6 +133,8 @@ def add(data, args):
     if not release["where"]:
         release["where"] = ["iOS App Store"] if args.platform == "ios" else ["Download"]
     release["date"] = args.status or args.date or today()
+    if args.dmg:
+        release["dmg"] = args.dmg
     if args.notes:
         release["notes"] = parse_notes(args.notes)
     elif not release["notes"]:
@@ -130,6 +152,7 @@ def main():
     a.add_argument("--date", help='e.g. "22 October 2026"; default today')
     a.add_argument("--status", help='shown instead of a date while not live, e.g. "Submitted 19 October 2026"')
     a.add_argument("--notes")
+    a.add_argument("--dmg", help='the DMG\'s file name in the GitHub release, e.g. "Unfold_1.0.1_5.dmg"')
     sub.add_parser("render")
     h = sub.add_parser("html")
     h.add_argument("--notes", required=True)
