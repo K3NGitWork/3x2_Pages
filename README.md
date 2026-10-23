@@ -23,3 +23,9 @@ Unfold repo runs it for every download release; App Store versions are added by 
 **App Store links:** one app record serves Mac and iPhone/iPad (Apple ID 6822054531):
 `https://apps.apple.com/app/id6822054531` for iOS, with `?platform=mac` for the Mac App Store.
 They only open once the app is live.
+
+**Search engines:** every page has a description, a canonical URL and Open Graph tags (shared
+links show `assets/social.jpg`); the Unfold page adds schema.org `SoftwareApplication` data and
+Safari's App Store banner. `sitemap.xml` lists the pages: submit
+`https://k3ngitwork.github.io/3x2_Pages/sitemap.xml` once in Google Search Console and Bing
+Webmaster Tools. (A `robots.txt` only counts at the domain root, which a project page can't serve.)
