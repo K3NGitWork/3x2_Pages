@@ -71,6 +71,21 @@
           "Saved passwords are tried for you, and stay in your Keychain."
         ]
       }
+    },
+    {
+      "version": "1.0.1",
+      "date": "Submitted 25 October 2026",
+      "where": [
+        "iOS App Store"
+      ],
+      "notes": {
+        "New": [
+          "With many archives, the one being unfolded is on top of the list and finished ones move to the bottom."
+        ],
+        "Fixed": [
+          "A password you just typed is tried first for the other archives waiting for one, so Unfold doesn't ask again."
+        ]
+      }
     }
   ]
 }
