@@ -36,6 +36,23 @@
       "notes": {
         "intro": "The first version of Unfold for Mac: RAR, ZIP, 7z and more, right in Finder. Signed and notarized by Apple; it updates itself."
       }
+    },
+    {
+      "version": "1.0.1",
+      "date": "25 October 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "New": [
+          "Settings > General and the welcome screen show whether Unfold is in Finder's right-click menu, with **Turn On…** to switch it on.",
+          "With many archives, the one being unfolded is on top of the list and finished ones move to the bottom."
+        ],
+        "Fixed": [
+          "A password you just typed is tried first for the other archives waiting for one, so Unfold doesn't ask again."
+        ]
+      },
+      "dmg": "Unfold_1.0.1_12.dmg"
     }
   ],
   "ios": [

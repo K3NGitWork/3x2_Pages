@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 1.0.1</title>
+      <pubDate>Sun, 25 Oct 2026 13:11:50 +0000</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<div class="w-release__group"><h3>New</h3><ul class="w-list"><li>Settings &gt; General and the welcome screen show whether Unfold is in Finder's right-click menu, with <b>Turn On…</b> to switch it on.</li><li>With many archives, the one being unfolded is on top of the list and finished ones move to the bottom.</li></ul></div><div class="w-release__group"><h3>Fixed</h3><ul class="w-list"><li>A password you just typed is tried first for the other archives waiting for one, so Unfold doesn't ask again.</li></ul></div>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-1.0.1/Unfold_1.0.1_12.dmg" length="10964125" type="application/octet-stream" sparkle:edSignature="0fu+Hb1I5V9PyXxXDo7gOZwc0hE7+L0Z46R3KBDAWbq1lWUoalwP8COD3eeJQ117dpeabRSvqFv6lT0u2c/4Cg=="/>
+    </item>
+    <item>
       <title>Unfold 1.0</title>
       <pubDate>Mon, 12 Oct 2026 21:00:03 +0000</pubDate>
       <sparkle:version>4</sparkle:version>
