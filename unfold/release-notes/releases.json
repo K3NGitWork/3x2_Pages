@@ -54,6 +54,23 @@
         ]
       },
       "dmg": "Unfold_1.0.1_12.dmg"
+    },
+    {
+      "version": "1.0.2",
+      "date": "26 October 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "Changed": [
+          "The Finder menu now shows only in your home folder. This works around a macOS bug that puts Unfold's icon on every drive. Turn it on for all drives in Settings > General.",
+          "The small progress window closes by itself when done."
+        ],
+        "Fixed": [
+          "The list is emptied when you close the window."
+        ]
+      },
+      "dmg": "Unfold_1.0.2_13.dmg"
     }
   ],
   "ios": [

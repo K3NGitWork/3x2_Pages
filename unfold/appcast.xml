@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 1.0.2</title>
+      <pubDate>Mon, 26 Oct 2026 18:27:56 +0000</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<div class="w-release__group"><h3>Changed</h3><ul class="w-list"><li>The Finder menu now shows only in your home folder. This works around a macOS bug that puts Unfold's icon on every drive. Turn it on for all drives in Settings &gt; General.</li><li>The small progress window closes by itself when done.</li></ul></div><div class="w-release__group"><h3>Fixed</h3><ul class="w-list"><li>The list is emptied when you close the window.</li></ul></div>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-1.0.2/Unfold_1.0.2_13.dmg" length="10971370" type="application/octet-stream" sparkle:edSignature="S3IlgtvokYQGJjZTvrhS1VbOzj+BFxn2GkjUKsVnVHiVJm/9I7dX+Tkf3EfPH02s30bVeNA0428v8WIxkKhtBw=="/>
+    </item>
+    <item>
       <title>Unfold 1.0.1</title>
       <pubDate>Sun, 25 Oct 2026 13:11:50 +0000</pubDate>
       <sparkle:version>12</sparkle:version>
