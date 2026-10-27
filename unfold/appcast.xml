@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 1.0.3</title>
+      <pubDate>Tue, 27 Oct 2026 17:07:38 +0000</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<div class="w-release__group"><h3>Changed</h3><ul class="w-list"><li>Settings are grouped more clearly, so every option is easier to find.</li><li>A streamlined password list.</li></ul></div>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-1.0.3/Unfold_1.0.3_14.dmg" length="11002298" type="application/octet-stream" sparkle:edSignature="HL+LpcshsYAnvU3gXEgQULLTYhXV/xqInF5pD+bwOrfNhlT13w6/FaTzqIce3E3kXIzZD8qYAphkfau5898VCw=="/>
+    </item>
+    <item>
       <title>Unfold 1.0.2</title>
       <pubDate>Mon, 26 Oct 2026 18:27:56 +0000</pubDate>
       <sparkle:version>13</sparkle:version>

@@ -72,6 +72,20 @@
         ]
       },
       "dmg": "Unfold_1.0.2_13.dmg"
+    },
+    {
+      "version": "1.0.3",
+      "date": "27 October 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "Changed": [
+          "Settings are grouped more clearly, so every option is easier to find.",
+          "A streamlined password list."
+        ]
+      },
+      "dmg": "Unfold_1.0.3_14.dmg"
     }
   ],
   "ios": [
