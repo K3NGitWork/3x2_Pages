@@ -1,0 +1,15 @@
+{
+  "mac": [
+    {
+      "version": "1.0",
+      "date": "Not released yet",
+      "where": [
+        "Download"
+      ],
+      "dmg": "Encode_1.0_1.dmg",
+      "notes": {
+        "intro": "The first version of Encode: smaller videos, nothing else changed. It re-encodes only the picture to H.265 and copies every audio track, subtitle and chapter as it is. Signed and notarized by Apple; it offers new versions when you open it."
+      }
+    }
+  ]
+}

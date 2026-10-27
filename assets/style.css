@@ -400,3 +400,95 @@ b, strong { font-weight: 600; }
   .w-switch .w-tabs { display: flex; }
   .w-switch .w-tab { flex: 1; justify-content: center; padding: 0 12px; }
 }
+
+/* ===== Encode (Encode Web 1.0.2) ======================================================
+   Additive only: everything below applies to pages with <html class="theme-encode"> or to
+   classes no Unfold page uses, so Unfold's pages render exactly as before. */
+.theme-encode {
+  --accent: #08756f;
+  --accent-soft: rgba(8, 117, 111, 0.14);
+  --accent-wash: rgba(8, 117, 111, 0.10);
+  --on-accent: #ffffff;
+  --lens-label: #08756f;
+  --icon-ground-top: #2cc4b6;
+  --icon-ground-bottom: #066b65;
+  --icon-frame-back: #7fdcd2;
+  --icon-frame-middle: #b9eee8;
+  --icon-frame-front: #ffffff;
+  --icon-play: #08756f;
+}
+@media (prefers-color-scheme: dark) {
+  .theme-encode {
+    --accent: #1aa89c;
+    --accent-soft: rgba(26, 168, 156, 0.16);
+    --accent-wash: rgba(26, 168, 156, 0.12);
+    --on-accent: #0e1414;
+    --lens-label: #f5f5f7;
+    --icon-ground-top: #1f2b2a;
+    --icon-ground-bottom: #0b1110;
+    --icon-frame-back: #12665f;
+    --icon-frame-middle: #1a948a;
+    --icon-frame-front: #e3f7f4;
+    --icon-play: #08756f;
+  }
+}
+/* Encode's icon: on Encode's pages, and on its card on the studio home. */
+.theme-encode .w-appicon, .w-appicon.w-appicon--encode { background-image: url("encode-icon-light.svg"); }
+.theme-encode .w-art { background-image: url("encode-art-light.svg"); }
+@media (prefers-color-scheme: dark) {
+  .theme-encode .w-appicon, .w-appicon.w-appicon--encode { background-image: url("encode-icon-dark.svg"); }
+  .theme-encode .w-art { background-image: url("encode-art-dark.svg"); }
+}
+
+/* Studio home: one card per app */
+.w-appcards { display: flex; flex-direction: column; gap: var(--space-16); }
+
+/* Download for Mac only: stays primary on touch devices, with a "for the Mac" note */
+.w-get--maconly .w-get__mac { order: 0; background: var(--accent); color: var(--on-accent); box-shadow: none; }
+.w-maconly-note { display: none; }
+@media (hover: none) and (pointer: coarse) {
+  .w-get--maconly .w-get__mac { order: 0; background: var(--accent); color: var(--on-accent); box-shadow: none; }
+  .w-maconly-note { display: block; }
+}
+
+/* ShrinkVisual: the same video before and after */
+.w-shrink { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--space-24); align-items: center; }
+.w-shrink .w-arrow { color: var(--accent); }
+.w-file { display: flex; flex-direction: column; gap: var(--space-8); padding: var(--space-20) var(--space-24); border-radius: var(--radius-card); background: var(--surface); box-shadow: var(--shadow-card); }
+.w-file__frame { border-radius: 14px; background: linear-gradient(var(--icon-frame-middle), var(--icon-frame-back)); aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; color: var(--icon-play); }
+.w-file__frame .w-sym { width: 40px; height: 40px; }
+.w-file__bar { height: 8px; border-radius: 999px; background: var(--surface-alt); overflow: hidden; }
+.w-file__bar i { display: block; height: 100%; border-radius: inherit; background: var(--text-secondary); }
+.w-file--after .w-file__bar i { background: var(--accent); }
+.w-file__name { font-family: var(--font-mono); font-size: 15px; line-height: 22px; }
+.w-file__size { font-size: 28px; line-height: 34px; font-weight: 700; letter-spacing: -0.4px; font-variant-numeric: tabular-nums; }
+.w-file__meta { font-size: 13px; line-height: 18px; color: var(--text-secondary); }
+.w-file--after .w-file__meta b { color: var(--accent); }
+.w-kept { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-12) var(--space-24); margin: 0; padding: 0; list-style: none; }
+.w-kept li { display: flex; align-items: center; gap: var(--space-12); font-size: 17px; line-height: 22px; }
+.w-kept .w-sym { color: var(--success); width: 22px; height: 22px; }
+
+/* A drawn Encode window, until a screenshot replaces it */
+.w-mockwin { border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-shot); padding: var(--space-16); display: flex; flex-direction: column; gap: var(--space-8); }
+.w-mockwin__bar { display: flex; align-items: center; gap: 8px; padding: 0 4px 8px; }
+.w-mockwin__bar i { width: 11px; height: 11px; border-radius: 50%; background: var(--surface-alt); }
+.w-mockwin__bar b { margin-left: 10px; font-size: 13px; }
+.w-mockwin__bar span { margin-left: auto; font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--accent); color: var(--on-accent); }
+.w-mockwin .w-mockrow { box-shadow: 0 0 0 0.5px var(--line); padding: 12px 14px; border-radius: 14px; }
+.w-mockwin .w-mockrow__name { font-size: 15px; line-height: 20px; }
+.w-mockwin .w-mockrow__status { font-size: 13px; line-height: 18px; font-variant-numeric: tabular-nums; }
+.w-mockwin .w-mockrow__status b { color: var(--accent); }
+.w-mockbar { height: 4px; border-radius: 999px; background: var(--surface-alt); margin-top: 6px; overflow: hidden; }
+.w-mockbar i { display: block; height: 100%; background: var(--accent); }
+.w-mockring { width: 22px; height: 22px; flex: none; border-radius: 50%; background: conic-gradient(var(--accent) 38%, var(--surface-alt) 0); -webkit-mask: radial-gradient(circle, transparent 6.5px, #000 7px); mask: radial-gradient(circle, transparent 6.5px, #000 7px); margin: 0 3px; }
+.w-mockwin .w-wait { color: var(--text-secondary); width: 28px; height: 28px; flex: none; }
+
+/* Licenses */
+.w-license { margin-top: var(--space-48); }
+.w-license .w-btn { margin-top: var(--space-8); }
+
+@media (max-width: 760px) {
+  .w-shrink { grid-template-columns: 1fr; }
+  .w-shrink .w-arrow { transform: rotate(90deg); justify-self: center; }
+  .w-kept { grid-template-columns: 1fr 1fr; }
+}

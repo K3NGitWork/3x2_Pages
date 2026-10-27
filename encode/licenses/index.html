@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="theme-encode">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encode Licenses</title>
+<meta name="description" content="The open source libraries inside Encode, their licenses, and the complete source of the parts under the GNU GPL.">
+<link rel="canonical" href="https://k3ngitwork.github.io/3x2_Pages/encode/licenses/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="3x2 Studio">
+<meta property="og:title" content="Encode Licenses">
+<meta property="og:description" content="The open source libraries inside Encode, their licenses, and the complete source of the parts under the GNU GPL.">
+<meta property="og:url" content="https://k3ngitwork.github.io/3x2_Pages/encode/licenses/">
+<meta property="og:image" content="https://k3ngitwork.github.io/3x2_Pages/assets/encode-icon.png">
+<meta property="og:image:alt" content="The Encode app icon: three frames, each smaller than the last.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/encode-icon.png">
+<link rel="apple-touch-icon" href="../../assets/encode-icon.png">
+</head>
+<body>
+<div class="w-navwrap"><header class="w-nav w-glass"><a class="w-brand" href="../../encode/" title="Encode home"><span class="w-appicon"></span>Encode</a><nav class="w-nav__links" aria-label="Site"><a href="../../encode/support/">Support</a><a href="../../encode/release-notes/">Release Notes</a><a href="../../encode/privacy/">Privacy</a><a class="w-btn w-btn--primary w-btn--small" href="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0/Encode_1.0_1.dmg">Download</a><details class="w-menu"><summary aria-label="Menu"><span class="w-menu__open"><svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#menu"/></svg></span><span class="w-menu__close"><svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#close"/></svg></span></summary><nav class="w-menu__panel w-glass" aria-label="Menu"><a href="../../encode/">Overview<svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#chevron_right"/></svg></a><a href="../../encode/support/">Support<svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#chevron_right"/></svg></a><a href="../../encode/release-notes/">Release Notes<svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#chevron_right"/></svg></a><a href="../../encode/privacy/">Privacy Policy<svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#chevron_right"/></svg></a><a class="w-lens" aria-current="page" href="../../encode/licenses/">Licenses<svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#chevron_right"/></svg></a></nav></details></nav></header></div>
+<main class="w-prose" style="padding-top:64px">
+  <h1 class="w-title">Licenses</h1>
+  <p class="w-small">Last updated: October 2026</p>
+  <div class="w-card w-callout" style="margin-top:24px"><span class="w-badge"><svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#code"/></svg></span><div><h3 class="w-h3">Open source inside</h3><p>Encode uses x265 and FFmpeg, which are licensed under the GNU GPL. The complete source of the parts under the GPL is available below: the exact release tarballs Encode 1.0 is built from, unmodified.</p></div></div>
+<section class="w-license"><h2 class="w-h2">x265 4.1</h2><p>Encodes the picture to H.265 / HEVC. <a href="gpl-2.0.txt">GNU General Public License 2.0 or later</a></p><a class="w-btn w-btn--secondary w-btn--small" href="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0/x265_4.1.tar.gz"><svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#download"/></svg>Download Source</a></section>
+<section class="w-license"><h2 class="w-h2">FFmpeg 8.0.3</h2><p>Reads the original, copies the audio, subtitles and chapters, and writes the .mkv. Encode’s copy is built with x265 (<code>--enable-gpl --enable-libx265</code>), so as a whole it is under the GPL, not the LGPL. <a href="gpl-2.0.txt">GNU General Public License 2.0 or later</a></p><a class="w-btn w-btn--secondary w-btn--small" href="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0/ffmpeg-8.0.3.tar.xz"><svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#download"/></svg>Download Source</a></section>
+<section class="w-license"><h2 class="w-h2">Sparkle</h2><p>Checks for and installs updates. <a href="sparkle-license.txt">MIT License</a></p></section>
+  <p class="w-small" style="margin-top:48px">How they are built: <code>scripts/build-ffmpeg.sh</code> configures FFmpeg with <code>--enable-gpl --enable-libx265 --enable-videotoolbox --disable-network --disable-ffplay</code> and links x265 statically. Encode runs them as separate programs inside the app (<code>Encode.app/Contents/Helpers</code>).</p>
+  <a class="w-btn w-btn--secondary w-btn--small" href="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0/build-ffmpeg.sh"><svg class="w-sym" aria-hidden="true"><use href="../../assets/icons.svg#download"/></svg>Download the Build Script</a>
+</main>
+<footer class="w-footer"><div class="w-frame"><div class="w-footer__top"><div><a class="w-footer__home" href="../../encode/" title="Encode home"><span class="w-appicon"></span>Encode</a><p class="w-footer__tag">Smaller videos, nothing else changed. For the Mac.</p></div><div class="w-footer__col"><h4>Encode</h4><a href="../../encode/">Overview</a><a href="../../encode/support/">Support</a><a href="../../encode/release-notes/">Release Notes</a><a href="../../encode/privacy/">Privacy Policy</a><a href="../../encode/licenses/" aria-current="page">Licenses</a></div><div class="w-footer__col"><h4>Get Encode</h4><a href="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0/Encode_1.0_1.dmg">Download for Mac</a><a href="../../encode/licenses/">Source Code</a></div><div class="w-footer__col"><h4>3x2 Studio</h4><a href="../../">Studio home</a><a href="../../unfold/">Unfold</a><a href="https://ko-fi.com/3x2studio">Buy Me a Coffee</a><a href="mailto:hello3x2@outlook.de">Contact</a></div></div><div class="w-footer__copy">© 2026 3x2 Studio · Sebastian Dietrich</div></div></footer>
+</body>
+</html>
