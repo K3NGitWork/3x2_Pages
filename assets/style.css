@@ -401,7 +401,7 @@ b, strong { font-weight: 600; }
   .w-switch .w-tab { flex: 1; justify-content: center; padding: 0 12px; }
 }
 
-/* ===== Encode (Encode Web 1.0.2) ======================================================
+/* ===== Encode (Encode Web 1.0.3) ======================================================
    Additive only: everything below applies to pages with <html class="theme-encode"> or to
    classes no Unfold page uses, so Unfold's pages render exactly as before. */
 .theme-encode {
@@ -472,8 +472,12 @@ b, strong { font-weight: 600; }
 .w-mockwin { border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-shot); padding: var(--space-16); display: flex; flex-direction: column; gap: var(--space-8); }
 .w-mockwin__bar { display: flex; align-items: center; gap: 8px; padding: 0 4px 8px; }
 .w-mockwin__bar i { width: 11px; height: 11px; border-radius: 50%; background: var(--surface-alt); }
-.w-mockwin__bar b { margin-left: 10px; font-size: 13px; }
-.w-mockwin__bar span { margin-left: auto; font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--accent); color: var(--on-accent); }
+.w-mockwin__tools { margin-left: auto; display: inline-flex; gap: 2px; padding: 2px 6px; border-radius: 999px; background: var(--surface-alt); }
+.w-mockwin__tools .w-sym { box-sizing: content-box; width: 17px; height: 17px; padding: 3.5px 5.5px; color: var(--text); }
+.w-mockwin__foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 4px -16px -16px; padding: 10px 16px; border-top: 1px solid var(--line); border-radius: 0 0 20px 20px; font-size: 12px; line-height: 16px; color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.w-mockwin__foot > span:first-child { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.w-mockwin__pause { flex: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px 4px 9px; border-radius: 999px; background: var(--surface-alt); color: var(--text); font-size: 13px; font-weight: 600; }
+.w-mockwin__pause .w-sym { width: 16px; height: 16px; color: var(--text); }
 .w-mockwin .w-mockrow { box-shadow: 0 0 0 0.5px var(--line); padding: 12px 14px; border-radius: 14px; }
 .w-mockwin .w-mockrow__name { font-size: 15px; line-height: 20px; }
 .w-mockwin .w-mockrow__status { font-size: 13px; line-height: 18px; font-variant-numeric: tabular-nums; }
