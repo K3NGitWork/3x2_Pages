@@ -10,9 +10,15 @@ Public web pages for 3x2 Studio's apps, served with GitHub Pages.
 | `/unfold/release-notes/` | Unfold release notes, Mac and iPhone & iPad |
 | `/unfold/support/` | Unfold support (App Store "Support URL") |
 | `/unfold/privacy/` | Unfold privacy policy (App Store "Privacy Policy URL") |
+| `/encode/` | Encode overview |
+| `/encode/support/` | Encode support |
+| `/encode/release-notes/` | Encode release notes (Mac) |
+| `/encode/privacy/` | Encode privacy policy |
+| `/encode/licenses/` | Encode's libraries, their licenses and the GPL source download |
 
 Plain HTML and one stylesheet (`assets/style.css`, light and dark mode); no build step. The look
-follows the Unfold Web design system; icons are Material Symbols Rounded (Apache 2.0) in
+follows the Unfold Web design system; Encode's pages add `class="theme-encode"` on `<html>`, which
+swaps the accent and icon colors (Encode Web design system, in the Encode repo's `docs/web-design/`); icons are Material Symbols Rounded (Apache 2.0) in
 `assets/icons.svg`. Sources of the texts: `design/appstore_brief/` in the Unfold repository.
 
 **Release notes:** `unfold/release-notes/releases.json` is the list; `tools/release-notes.py`
@@ -29,3 +35,7 @@ links show `assets/social.jpg`); the Unfold page adds schema.org `SoftwareApplic
 Safari's App Store banner. `sitemap.xml` lists the pages: submit
 `https://k3ngitwork.github.io/3x2_Pages/sitemap.xml` once in Google Search Console and Bing
 Webmaster Tools. (A `robots.txt` only counts at the domain root, which a project page can't serve.)
+
+**Encode:** `encode/release-notes/releases.json` and `tools/encode-release-notes.py` work like
+Unfold's, for Encode's pages only; `encode/appcast.xml` is its update feed. The DMG and the GPL
+source tarballs (x265, FFmpeg) are assets of the GitHub release `encode-<version>`.
