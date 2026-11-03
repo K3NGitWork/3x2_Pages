@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparkle update feed for Encode, the download from this website.
+     scripts/release-direct.sh (publish option) in the Encode repo adds the items. -->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Encode</title>
+    <link>https://k3ngitwork.github.io/3x2_Pages/encode/</link>
+    <language>en</language>
+    <!-- items -->
+    <item>
+      <title>Encode 1.0.0</title>
+      <pubDate>Tue, 03 Nov 2026 22:49:32 +0000</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>The first version of Encode: smaller videos, nothing else changed.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0.0/Encode_1.0.0_1.dmg" length="28234162" type="application/octet-stream" sparkle:edSignature="DJ2IpYnuiVdXv/yDgk/1c3FL+BC8vyqkQIl5m1hcome1VmY9UdCp6iE2dgm966rNb5dLiM4EQerg7AW5n86FCA=="/>
+    </item>
+  </channel>
+</rss>
