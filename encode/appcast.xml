@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Encode 1.0.3</title>
+      <pubDate>Wed, 04 Nov 2026 17:40:00 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>New quality levels: Best, Balanced and Smaller now give noticeably smaller files, tuned on real footage.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0.3/Encode_1.0.3_4.dmg" length="28236004" type="application/octet-stream" sparkle:edSignature="Yj/GRaEUSwGrC8BiY+6edL9n34iO+5biCn/Yd0i5WgxLziVqLDxVhdo6Tch7DdkJHaxG+SlP5Ing+fBtJbqMBA=="/>
+    </item>
+    <item>
       <title>Encode 1.0.2</title>
       <pubDate>Wed, 04 Nov 2026 12:17:08 +0000</pubDate>
       <sparkle:version>3</sparkle:version>

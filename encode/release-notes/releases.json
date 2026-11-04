@@ -32,6 +32,17 @@
         "intro": "Progress now shows correctly for Blu-ray files with sparse subtitle tracks."
       },
       "dmg": "Encode_1.0.2_3.dmg"
+    },
+    {
+      "version": "1.0.3",
+      "date": "4 November 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "intro": "New quality levels: Best, Balanced and Smaller now give noticeably smaller files, tuned on real footage."
+      },
+      "dmg": "Encode_1.0.3_4.dmg"
     }
   ]
 }
