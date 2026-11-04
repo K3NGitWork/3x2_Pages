@@ -21,6 +21,17 @@
         "intro": "Re-encodes oversized H.265 and AV1 files; files that are already compact are still kept as they are."
       },
       "dmg": "Encode_1.0.1_2.dmg"
+    },
+    {
+      "version": "1.0.2",
+      "date": "4 November 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "intro": "Progress now shows correctly for Blu-ray files with sparse subtitle tracks."
+      },
+      "dmg": "Encode_1.0.2_3.dmg"
     }
   ]
 }

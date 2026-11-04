@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Encode 1.0.2</title>
+      <pubDate>Wed, 04 Nov 2026 12:17:08 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Progress now shows correctly for Blu-ray files with sparse subtitle tracks.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0.2/Encode_1.0.2_3.dmg" length="28236317" type="application/octet-stream" sparkle:edSignature="KtgEH/VYNcP3pqq7E2jwQPDAarUt40cI2PV2NeDZRKsZ94EMUW6uVU6prR4kuu0aKorRP0xZBIBVpuWEJN2lAA=="/>
+    </item>
+    <item>
       <title>Encode 1.0.1</title>
       <pubDate>Wed, 04 Nov 2026 11:43:41 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
