@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Encode 1.0.4</title>
+      <pubDate>Wed, 04 Nov 2026 18:46:22 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>The bottom bar stays readable with long queues: the list now scrolls under a Liquid Glass bar.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0.4/Encode_1.0.4_5.dmg" length="28239012" type="application/octet-stream" sparkle:edSignature="IyHFHKLRE8G198fB6yj8InQU7NKlf2AfHVssHQzeiKM3uNHn8WeYSYxt/2ioCVjsgnYASm3VQUSbUstPRJr2DQ=="/>
+    </item>
+    <item>
       <title>Encode 1.0.3</title>
       <pubDate>Wed, 04 Nov 2026 17:40:00 +0000</pubDate>
       <sparkle:version>4</sparkle:version>

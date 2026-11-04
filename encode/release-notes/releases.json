@@ -43,6 +43,17 @@
         "intro": "New quality levels: Best, Balanced and Smaller now give noticeably smaller files, tuned on real footage."
       },
       "dmg": "Encode_1.0.3_4.dmg"
+    },
+    {
+      "version": "1.0.4",
+      "date": "4 November 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "intro": "The bottom bar stays readable with long queues: the list now scrolls under a Liquid Glass bar."
+      },
+      "dmg": "Encode_1.0.4_5.dmg"
     }
   ]
 }
