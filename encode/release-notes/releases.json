@@ -54,6 +54,17 @@
         "intro": "The bottom bar stays readable with long queues: the list now scrolls under a Liquid Glass bar."
       },
       "dmg": "Encode_1.0.4_5.dmg"
+    },
+    {
+      "version": "1.0.5",
+      "date": "4 November 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "intro": "Every file you add is now converted. New quality levels: Best 20, Balanced 24, Smaller 28."
+      },
+      "dmg": "Encode_1.0.5_6.dmg"
     }
   ]
 }
