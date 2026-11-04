@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Encode 1.0.1</title>
+      <pubDate>Wed, 04 Nov 2026 11:43:41 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Re-encodes oversized H.265 and AV1 files; files that are already compact are still kept as they are.</p>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/encode-1.0.1/Encode_1.0.1_2.dmg" length="28235223" type="application/octet-stream" sparkle:edSignature="WyvwBMx4qoVV/3g61JCCy5TI1RLBcz/zqWwmSIZ0qQG29KDE88pui6zE28FyxB4Q9ycucqHRs6Uybvlfk+80Cw=="/>
+    </item>
+    <item>
       <title>Encode 1.0.0</title>
       <pubDate>Tue, 03 Nov 2026 22:49:32 +0000</pubDate>
       <sparkle:version>1</sparkle:version>
