@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 1.0.4</title>
+      <pubDate>Thu, 05 Nov 2026 07:18:01 +0000</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<div class="w-release__group"><h3>Fixed</h3><ul class="w-list"><li>The right password now opens multipart RAR sets where one large file spans every part (like <code>.rar</code>, <code>.r00</code>, <code>.r01</code>).</li></ul></div>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-1.0.4/Unfold_1.0.4_15.dmg" length="11002016" type="application/octet-stream" sparkle:edSignature="Fj/bRRDtfGD5nJpmbABmnrMd7v4ZShVa9PmYkkQ/uutcxPLJ28TH+HyWCPQNT0mLStc05HLj8Ljke3SwOzdGDQ=="/>
+    </item>
+    <item>
       <title>Unfold 1.0.3</title>
       <pubDate>Tue, 27 Oct 2026 17:07:38 +0000</pubDate>
       <sparkle:version>14</sparkle:version>

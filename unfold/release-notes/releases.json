@@ -87,6 +87,19 @@
         ]
       },
       "dmg": "Unfold_1.0.3_14.dmg"
+    },
+    {
+      "version": "1.0.4",
+      "date": "5 November 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "Fixed": [
+          "The right password now opens multipart RAR sets where one large file spans every part (like `.rar`, `.r00`, `.r01`)."
+        ]
+      },
+      "dmg": "Unfold_1.0.4_15.dmg"
     }
   ],
   "ios": [
