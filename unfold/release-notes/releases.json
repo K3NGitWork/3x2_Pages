@@ -117,7 +117,7 @@
           "The bar at the bottom of the window is always shown, with a larger Clear Finished button."
         ]
       },
-      "dmg": "Unfold_1.0.5_17.dmg"
+      "dmg": "Unfold_1.0.5_18.dmg"
     }
   ],
   "ios": [
@@ -149,6 +149,18 @@
         ],
         "Fixed": [
           "A password you just typed is tried first for the other archives waiting for one, so Unfold doesn't ask again."
+        ]
+      }
+    },
+    {
+      "version": "1.0.5",
+      "date": "Submitted 24 November 2026",
+      "where": [
+        "iOS App Store"
+      ],
+      "notes": {
+        "Changed": [
+          "Archives that share a top folder, like several episodes of one show, now unfold into that same folder instead of “Show 2”, “Show 3”."
         ]
       }
     }
