@@ -100,6 +100,23 @@
         ]
       },
       "dmg": "Unfold_1.0.4_15.dmg"
+    },
+    {
+      "version": "1.0.5",
+      "date": "24 November 2026",
+      "where": [
+        "Download"
+      ],
+      "notes": {
+        "New": [
+          "Unfold to “Unfold” Folder: right-click archives in Finder to unfold them all into one “Unfold” folder next to them.",
+          "Settings > General > Unfold to can also put everything into an “Unfold” folder next to the archive."
+        ],
+        "Changed": [
+          "The bar at the bottom of the window is always shown, with a larger Clear Finished button."
+        ]
+      },
+      "dmg": "Unfold_1.0.5_16.dmg"
     }
   ],
   "ios": [

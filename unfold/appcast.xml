@@ -8,6 +8,15 @@
     <language>en</language>
     <!-- items -->
     <item>
+      <title>Unfold 1.0.5</title>
+      <pubDate>Tue, 24 Nov 2026 15:43:12 +0000</pubDate>
+      <sparkle:version>16</sparkle:version>
+      <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<div class="w-release__group"><h3>New</h3><ul class="w-list"><li>Unfold to “Unfold” Folder: right-click archives in Finder to unfold them all into one “Unfold” folder next to them.</li><li>Settings &gt; General &gt; Unfold to can also put everything into an “Unfold” folder next to the archive.</li></ul></div><div class="w-release__group"><h3>Changed</h3><ul class="w-list"><li>The bar at the bottom of the window is always shown, with a larger Clear Finished button.</li></ul></div>]]></description>
+      <enclosure url="https://github.com/K3NGitWork/3x2_Pages/releases/download/unfold-1.0.5/Unfold_1.0.5_16.dmg" length="11015816" type="application/octet-stream" sparkle:edSignature="elgUeo5frLLgmq4+uQfi2teBTbWebUNXYJMZIw4RLCuh0tYWq1UYmyW0KekOnYkf7OUOI74ofpZnxt4xCbcAAQ=="/>
+    </item>
+    <item>
       <title>Unfold 1.0.4</title>
       <pubDate>Thu, 05 Nov 2026 07:18:01 +0000</pubDate>
       <sparkle:version>15</sparkle:version>
